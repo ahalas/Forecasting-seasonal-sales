@@ -2,6 +2,10 @@
 library(tidyverse)
 library(mosaic)
 library(stargazer)
+library(rio)
+
+#loading dataset from github api
+Dataex1 <- rio::import('https://github.com/ahalas/Forecasting-seasonal-sales/blob/master/final123.xlsx?raw=true')
 #df format conversion + variable naming
 as.numeric(as.character(Dataex1$time))
 as.numeric(as.character(Dataex1$sales))
@@ -14,6 +18,7 @@ plot1 <- ggplot(data = Dataex1) +
        y = "Sales",
        title = "Sales given Date") +
 theme_minimal()
+plot1
 
 #2. plot 1, linear regression
 Dataex1$time <- 1:36
@@ -91,6 +96,7 @@ plot2 <- ggplot(data = Dataex1) +
        y = "Sales",
        title = "Sales given Date with predicted sales") +
   theme_minimal()
+plot2
 
 # 5. 95% interval = roughly regression +/- 2se for Dec 1992
 upperinterval <- (0.045*((Dataex1$sales))+1)-(0.658)+(2.817)+(2*0.167)
