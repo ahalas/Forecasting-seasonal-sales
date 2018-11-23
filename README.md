@@ -12,3 +12,5 @@ The R script provided in the repository provides answers to the questions of the
 5. Create a 95% confidence interval
 6. Obtain forecasts adjusted for seasonality
   (This was done by multiplying the unadjusted forecasts by the Sales to forecast ratio (S/F ratio). The S/F ratio was obtained by taking the average of actual sales from that month, and then dividing the result by the mean of forecast sales for that month.)
+
+awarded 85% for assingment
