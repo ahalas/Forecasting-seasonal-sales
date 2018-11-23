@@ -3,8 +3,6 @@ R script  forecasting sales of a good given time of the year (+ .xlsx data set)
 
 In this repository you will find one of my assignments for Managerial Economics unit (ECON20001).
 
-Import the provided spreasheet into R studio before running the script.
-
 The R script provided in the repository provides answers to the questions of the assignment.
 
 1. Plot sales for different time periods on the graph.
